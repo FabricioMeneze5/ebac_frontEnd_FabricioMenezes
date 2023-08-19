@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:700px){
+    header .container,
+    header ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+body > header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(2, 2, 116);
+    padding: 8px 0;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    margin: 0 5%;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin-top: 5%;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+header li a:hover{
+    background-color: #6e6eae;
+    border-radius: 3px;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articles article img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.articles article{
+    flex-grow: 1;
+    width: 30%;
+    width: 350px;
+    max-width: 500px;
+    height: 550px;
+    margin: 1%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+section h2,
+.articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin:8px 0;
+    font-size: 24px;
+}
+
+.articles article a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(2, 2, 116);
+    padding: 5px;
+    border-radius: 3px;
+    color:white;
+    margin-top: 8px;
+}
+
+.articles article a:hover{
+    background-color: #6e6eae;
+    font-weight: bold;
+}
+
+.articles article p,
+.articles article a{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+#sports{
+    background-color: rgb(200, 255, 200);
+}
+
+#economy{
+    background-color: rgb(253, 253, 200);
+}
+
+#games{
+    background-color: rgb(228, 200, 255);
+}
+
+#ciencia{
+    background-color: rgb(255, 200, 200);
+}

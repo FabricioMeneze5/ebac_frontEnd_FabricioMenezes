@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: dimgrey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 16px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#formulario {
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 32px;
+    width: 300px;
+}
+
+#btn, label {
+    font-size: large;
+}
+
+#mensage-error, #mensage-sucess, #form-sent {
+    display: none;
+    margin-bottom: 5px;
+    width: 90%;
+    font-size: small;
+}
+
+input {
+    padding: 8px;
+}
+
+input, #btn {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+#btn, #mensage-error, #mensage-sucess, #form-sent {
+    margin-left: 13px;
+}
+
+#mensage-error {
+    background-color: rgb(255, 141, 141);
+    border: solid 1px red;
+    color: white;
+}
+
+#mensage-sucess, #form-sent {
+    background-color: rgb(97, 170, 97);
+    border: solid 1px green;
+    color: white;
+}
+
+input.error {
+    border-color: red;
+    outline-color: red;
+}

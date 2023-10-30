@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="FabricioMeneze5">
+    <link rel="stylesheet" href="style.css">
+    <title>exercicio plugins jquery</title>
+</head>
+<body>
+        <h1>Formulário de Cadastro</h1>
+        <div class="container">
+        <form>
+            <h2>Informe seus dados</h2>
+            <label for="nomeId">Nome Completo:</label>
+            <input type="text" id="nomeId" name="nome">
+    
+            <label for="emailId">Email:</label>
+            <input type="email" id="emailId" name="email">
+    
+            <select for="telId">
+                <option>Telefone:</option>
+                <option>Celular:</option>
+            </select>
+            <input type="telId" id="telId" name="tel">
+    
+            <label for="cpfId">CPF:</label>
+            <input type="number" id="cpfId" name="cpf">
+    
+            <label for="enderecoId">Endereço:</label>
+            <input type="datetime" id="enderecoId" name="endereco">
+    
+            <label for="cepId">CEP:</label>
+            <input type="number" id="cepId" name="cep">
+    
+            <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/messages_pt_BR.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+</html>

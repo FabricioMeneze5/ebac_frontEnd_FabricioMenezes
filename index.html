@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,22 +16,23 @@
             <input type="text" id="nomeId" name="nome">
     
             <label for="emailId">Email:</label>
-            <input type="email" id="emailId" name="email">
+            <input type="email" id="emailId" name="email" placeholder="exemplo@exemplo.com">
     
-            <select for="telId">
-                <option>Telefone:</option>
-                <option>Celular:</option>
+            <select id="nContato">
+                <option selected disabled value="#">Selecione</option>
+                <option value="telefone">Telefone:</option>
+                <option value="celular">Celular:</option>
             </select>
-            <input type="telId" id="telId" name="tel">
+            <input type="text" id="telId" name="tel">
     
             <label for="cpfId">CPF:</label>
-            <input type="number" id="cpfId" name="cpf">
+            <input type="text" id="cpfId" name="cpf">
     
             <label for="enderecoId">Endereço:</label>
             <input type="datetime" id="enderecoId" name="endereco">
     
             <label for="cepId">CEP:</label>
-            <input type="number" id="cepId" name="cep">
+            <input type="text" id="cepId" name="cep">
     
             <button type="submit">Enviar</button>
             </form>

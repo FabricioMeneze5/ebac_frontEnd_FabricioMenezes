@@ -1,6 +1,18 @@
 $(document).ready(function() {
-    $('#telId').mask('(00) 00000-0000', {
-        placeholder:'(00) 00000-0000'
+    $('#nContato').change(function() {
+        var opcaoSelecionada = $(this).val();
+
+        $('#telId').val('').unmask();
+
+        if (opcaoSelecionada === 'telefone') {
+            $('#telId').mask('(00) 0000-0000', {
+                placeholder:'(00) 0000-0000'
+            });
+        } else if (opcaoSelecionada === 'celular') {
+            $('#telId').mask('(00) 00000-0000', {
+                placeholder:'(00) 00000-0000'
+            });
+        }
     });
 
     $('#cpfId').mask('000.000.000-00', {
@@ -8,14 +20,13 @@ $(document).ready(function() {
     });
 
     $('#cepId').mask('0000-000', {
-        placeholder:'0000-00'
+        placeholder:'0000-000'
     });
 
-    $('form').validade({
+    $('form').validate({
         rules: {
             nome: {
-                required: true,
-                minlength: 2
+                required: true
             },
             email: {
                 required: true,

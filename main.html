@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Bootstrap Avancado</title>
+    <link rel="stylesheet" href="./bootstrapFiles/bootstrap.min.css">
+    <style>
+        article,
+        #carousel1 {
+            margin-bottom: 20px;
+        }
+
+        article > img {
+            width: auto;
+            height: 300px;
+        }
+
+        .carousel-item > img {
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="alert alert-dark">
+            <h1 class="h3">Exercicio Bootstrap Avançado</h1>
+        </header>
+
+        <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./imgs/carouselIMG1.png">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imgs/carouselIMG2.jpg">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imgs/carouselIMG3.jpg">
+                </div>
+            </div>
+            <button data-bs-target="#carousel1" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel1" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-danger">
+                    <header class="card-header h4">
+                        Fire Dragon
+                    </header>
+                    <img src="./imgs/dangerDragon.webp">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore illum possimus!
+                        </p>
+                    </div>
+                    <footer class="card-footer d-flex justify-content-between h5">
+                            <div>30 Pw</div>
+                            <div>Lf 30</div>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-primary">
+                    <header class="card-header h4">
+                        Water Dragon
+                    </header>
+                    <img src="./imgs/primaryDragon.webp">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore illum possimus!
+                        </p>
+                    </div>
+                    <footer class="card-footer d-flex justify-content-between h5">
+                            <div>30 Pw</div>
+                            <div>Lf 30</div>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header h4">
+                        Dark Dragon
+                    </header>
+                    <img src="./imgs/darkDragon.webp">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore illum possimus!
+                        </p>
+                    </div>
+                    <footer class="card-footer d-flex justify-content-between h5">
+                            <div>30 Pw</div>
+                            <div>Lf 30</div>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-success">
+                    <header class="card-header h4">
+                        Tree Dragon
+                    </header>
+                    <img src="./imgs/successDragon.webp">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore illum possimus!
+                        </p>
+                    </div>
+                    <footer class="card-footer d-flex justify-content-between h5">
+                            <div>30 Pw</div>
+                            <div>Lf 30</div>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-link">
+                    <header class="card-header h4">
+                        Light Dragon
+                    </header>
+                    <img src="./imgs/lightDragon.jpg">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore illum possimus!
+                        </p>
+                    </div>
+                    <footer class="card-footer d-flex justify-content-between h5">
+                            <div>30 Pw</div>
+                            <div>Lf 30</div>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-secondary">
+                    <header class="card-header h4">
+                        Stone Dragon
+                    </header>
+                    <img src="./imgs/secondaryDragon.webp">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore illum possimus!
+                        </p>
+                    </div>
+                    <footer class="card-footer d-flex justify-content-between h5">
+                            <div>30 Pw</div>
+                            <div>Lf 30</div>
+                    </footer>
+                </article>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="./bootstrapFiles/bootstrap.bundle.min.js"></script>
+</body>
+</html>

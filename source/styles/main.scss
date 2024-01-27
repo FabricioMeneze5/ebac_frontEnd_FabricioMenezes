@@ -1,0 +1,56 @@
+@use'reset';
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+form {
+    margin-top: 40px;
+
+    input, textarea, button {
+        display: block;
+        padding: 8px;
+        margin-bottom: 8px;
+        width: 100%;
+        resize: none;
+    }
+
+    button {
+        background-color: #2ecc71;
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken(#2ecc71, 15%);
+        }
+    }
+}
+
+.success-message {
+    display: none;
+    background-color: #2ecc71;
+    padding: 16px;
+    color: white;
+}
+
+.error-message {
+    display: none;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="FabricioMeneze5">
+    <title>Contact books</title>
+    <link rel="stylesheet" href="@@CSS_ADDRESS">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../images/agenda6.png">
+            <h1>Contact book</h1>
+        </header>
+        <form id="form-add">
+            <ul>
+                <li>
+                    <input id="text-input" type="text" placeholder="Name" required>
+                </li>
+                <li class="numberLi">
+                    <input id="number-input" type="number" placeholder="Number" required>
+                    <p id="error-box">---</p>
+                </li>
+                <li>
+                    <button id="btn" type="submit">Add+</button>
+                </li>
+            </ul>
+        </form>
+
+        <table id="table-list" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script src="@@JS_ADDRESS"></script>
+</body>
+</html>

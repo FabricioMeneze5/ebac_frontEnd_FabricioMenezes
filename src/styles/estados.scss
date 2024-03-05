@@ -1,0 +1,7 @@
+@use 'temas.scss';
+
+.em--destaque { /* modificador */
+    border: 2px solid temas.$corPrincipal;
+    padding: 8px;
+    background-color: temas.$corSecundaria;
+}

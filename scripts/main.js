@@ -1,8 +1,7 @@
 $(document).ready(function() {
     const endpoint = "https://api.github.com/users/FabricioMeneze5";
-    
     const avatar = $('#avatar');
-    const name = $('#name');
+    const name = $('.profile-name');
     const user = $('#user-name');
     const reposit = $('#reposit');
     const followers = $('#followers');
@@ -14,8 +13,12 @@ $(document).ready(function() {
         return res.json();
     })
     .then(function(json) {
-        avatar.src = json.avatar_url;
-        name.innerText = json.name;
-        user.innerText = json.login;
+        avatar.attr("src", json.avatar_url);
+        name.text(json.name);
+        user.text(`@${json.login}`);
+        reposit.text(json.public_repos);
+        followers.text(json.followers);
+        following.text(json.following);
+        profileLink.attr("href", json.html_url);
     })
 })

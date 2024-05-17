@@ -21,6 +21,20 @@ body {
     margin: 0 auto;
 }
 
+.errorMessage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    background-color: red;
+    border: solid 1px darkred;
+}
+
 header {
     background-color: var(--header-color);
     text-align: center;

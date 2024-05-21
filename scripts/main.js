@@ -7,10 +7,14 @@ $(document).ready(function() {
     const followers = $('#followers');
     const following = $('#following');
     const profileLink = $('#profile-link');
+    const endpoint = "https://api.github.com/users/FabricioMeneze5";
 
-    fetch("https://api.github.com/users/FabricioMeneze5")
+    fetch(endpoint)
     .then(function(res) {
-        return res.json();
+        if (res.ok) {
+            return res.json();
+        }
+        throw new Error("Erro na chamada do serviço do github")
     })
     .then(function(json) {
         avatar.attr("src", json.avatar_url);
